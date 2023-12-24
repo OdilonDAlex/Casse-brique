@@ -4,15 +4,16 @@ const info = document.querySelector("div.playGame") ;
 
 const canvasHeight = 450 ;
 const canvasWidth = 600 ;
+
 var rectRowNumber = 4 ;
 var rectColNumber = 12 ;
-
 var rectNumber = rectRowNumber*rectColNumber ;
 
+// fin du jeu 
 var end = false ;
 
-const ctx = canvas.getContext("2d") ;
 
+const ctx = canvas.getContext("2d") ;
 ctx.canvas.width = canvasWidth ;
 ctx.canvas.height = canvasHeight ;
 
@@ -32,8 +33,8 @@ const barVx = 10 ;
 
 // circle
 const radius = 10;
-var circleVx = undefined ;
-var circleVy = undefined ;
+var circleVx ;
+var circleVy ;
 
 function Circle(posX, posY){
     this.posX = posX,
